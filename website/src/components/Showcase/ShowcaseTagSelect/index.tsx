@@ -14,11 +14,11 @@
     type ReactElement,
   } from 'react';
   import {useHistory, useLocation} from '@docusaurus/router';
-  import {toggleListItem} from '@site/src/utils/jsUtils';
-  import {prepareUserState} from '../../index';
+  import {toggleListItem} from './../../../utils/jsUtils';
+  import {prepareUserState} from './../../../pages/index';
   import {
     type TagType,
-  } from '@site/src/data/tags';
+  } from './../../../data/tags';
   
   import styles from './styles.module.css';
   

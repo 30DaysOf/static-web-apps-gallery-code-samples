@@ -1,6 +1,16 @@
-MIT License
+-------------------------------------------------------
+NOTICES AND INFORMATION
 
-(From: https://github.com/facebook/docusaurus/blob/main/LICENSE)
+This file lists any third-party libraries or other resources that may be distributed under licenses different than the azure/cloud-native repository content.
+
+In the event that we accidentally failed to list a required notice, please bring it to our attention by opening an issue.
+
+The attached notices are provided for information only.
+
+-------------------------------------------------------
+// License for Docusaurus (https://docusaurus.io)
+
+MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
@@ -21,3 +31,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+-------------------------------------------------------

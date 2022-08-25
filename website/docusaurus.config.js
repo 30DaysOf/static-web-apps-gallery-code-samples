@@ -1,31 +1,35 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = 
+  require('prism-react-renderer/themes/github');
+const darkCodeTheme = 
+  require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+
   title: 'Static Web Apps Gallery',
   tagline: 'A Community Projects & Code Samples Showcase',
-  url: 'https://microsoft.github.io',
+
+  url: 'https://30DaysOf.github.io',
   baseUrl: '/static-web-apps-gallery-code-samples/',
+  organizationName: '30DaysOf', 
+  projectName: 'static-web-apps-gallery-code-samples', 
+  trailingSlash: false,
+  deploymentBranch: `gh-pages`, 
+  favicon: 'img/favicon.ico',
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'microsoft', // Usually your GitHub org/user name.
-  projectName: 'static-web-apps-gallery-code-samples', // Usually your repo name.
-  trailingSlash: false,
-  deploymentBranch: `gh-pages`, // default = gh-pages
 
   plugins: [
     [
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
+        max: 1030, 
+        min: 640, 
+        steps: 2, 
         disableInDev: false,
       },
     ],
@@ -35,12 +39,13 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: false,
-        blog: false,
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+      (
+        {
+          docs: false,
+          blog: false,
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
       }),
     ],
   ],
@@ -51,13 +56,11 @@ const config = {
       navbar: {
         title: 'SWA Gallery',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'SWA Gallery Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/showcase', label: 'Showcase', position: 'left'},
-          {to: '/contribute', label: 'Contributions', position: 'right'},
-          {to: 'https://github.com/orgs/staticwebdev/discussions/14', label: 'Discussions', position: 'right'}, 
+          {to: 'https://www.azurestaticwebapps.dev/', label: 'Community Hub', position: 'right'}, 
           {
             href: 'https://github.com/microsoft/static-web-apps-gallery-code-samples',
             position: 'right',
@@ -124,10 +127,9 @@ const config = {
       }],
       announcementBar: {
         id: 'Add Your Project!',
-        content:
-          'Learn with <a target="_blank" rel="noopener noreferrer" href="https://aka.ms/30DaysOfSWA/"><b>#30DaysOfSWA</b></a> - then <a target="_blank" rel="noopener noreferrer" href="https://portal.azure.com/?feature.customportal=false&WT.mc_id=30daysofswa-61155-ninarasi#create/Microsoft.StaticApp"><b>Deploy To Azure</b>!</a> &nbsp;🚀',
-        backgroundColor: '#50E6FF',
-        textColor: '#552F99',
+        content: '<b>Found this project helpful? Give us a star on <a href="https://github.com/microsoft/static-web-apps-gallery-code-samples"><b>GitHub</b></a></b> 🙏🏽',
+        backgroundColor: '#552f99',
+        textColor: '#FFFFFF',
         isCloseable: false,
       },
     }),

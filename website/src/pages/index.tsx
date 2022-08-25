@@ -10,36 +10,36 @@
  import Layout from '@theme/Layout';
  import clsx from 'clsx';
  
- import FavoriteIcon from '@site/src/components/svgIcons/FavoriteIcon';
+ import FavoriteIcon from './../components/svgIcons/FavoriteIcon'
+ 
  import ShowcaseTagSelect, {
    readSearchTags,
- } from './_components/ShowcaseTagSelect';
+ } from './../components/Showcase/ShowcaseTagSelect';
+ 
  import ShowcaseFilterToggle, {
    type Operator,
    readOperator,
- } from './_components/ShowcaseFilterToggle';
- import ShowcaseCard from './_components/ShowcaseCard';
+ } from './../components/Showcase/ShowcaseFilterToggle';
+ import ShowcaseCard from './../components/Showcase/ShowcaseCard';
  import {
    Tags,
    type User,
    type TagType,
- } from '@site/src/data/tags';
+ } from './../../src/data/tags';
+
  import {
    sortedUsers,
    TagList,
- } from '@site/src/data/users';
- import ShowcaseTooltip from './_components/ShowcaseTooltip';
+ } from './../../src/data/users';
+ import ShowcaseTooltip from './../components/Showcase/ShowcaseTooltip';
  
  import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
  import Translate, {translate} from '@docusaurus/Translate';
  import {useHistory, useLocation} from '@docusaurus/router';
  import {usePluralForm} from '@docusaurus/theme-common';
  
- import styles from './styles.module.css';
+ import styles from './../components/Showcase/styles.module.css';
  
- const TITLE = 'See Static Web Apps In Action';
- const DESCRIPTION = 'A community-contributed app showcase to learn from!';
- const EDIT_URL = 'https://github.com/microsoft/static-web-apps-gallery-code-samples/edit/master/docs/www/src/data/users.tsx'
 
  /*
    'https://github.com/microsoft/static-web-apps-gallery-code-samples/edit/master/docs/www/src/data/users.tsx';
@@ -123,6 +123,12 @@
      [selectedTags, operator, searchName],
    );
  }
+ 
+
+ const TITLE = 'See Static Web Apps In Action';
+ const DESCRIPTION = 'A community-contributed app showcase to learn from!';
+ const EDIT_URL = 
+ 'https://github.com/orgs/staticwebdev/discussions/14'
  
  function ShowcaseHeader() {
    return (

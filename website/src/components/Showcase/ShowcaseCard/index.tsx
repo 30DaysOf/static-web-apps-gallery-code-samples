@@ -12,18 +12,19 @@
  import Translate from '@docusaurus/Translate';
  
  import styles from './styles.module.css';
- import FavoriteIcon from '@site/src/components/svgIcons/FavoriteIcon';
+ import FavoriteIcon from './../../svgIcons/FavoriteIcon';
  import Tooltip from '../ShowcaseTooltip';
  import {
    Tag,
    Tags,
    type User,
    type TagType,
- } from '@site/src/data/tags';
+ } from './../../../data/tags';
+ 
  import {
    TagList,
- } from '@site/src/data/users';
- import {sortBy} from '@site/src/utils/jsUtils';
+ } from './../../../data/users';
+ import {sortBy} from './../../../utils/jsUtils';
  
  const TagComp = React.forwardRef<HTMLLIElement, Tag>(
    ({label, color, description}, ref) => (
